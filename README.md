@@ -1,4 +1,4 @@
-# Comitê de Análise de Ideias
+# Quorum
 
 Um sistema de análise multidisciplinar baseado em Claude. Você apresenta uma ideia e um comitê de especialistas a avalia em profundidade — de diferentes ângulos, em sequência lógica, sem otimismo fácil.
 
@@ -15,21 +15,22 @@ O Auditor fala por último entre os especialistas — depois de ler tudo — e t
 ```
 README.md
 ORQUESTRADOR.md        # instruções completas para o Claude orquestrar o comitê
-MAESTRO.md
-DESENVOLVEDOR.md
-INFRA.md
-ARQUITETO.md
-DEVOPS.md
-COMERCIAL.md
-RH.md
-AUDITOR.md
+squad/
+├── MAESTRO.md
+├── DESENVOLVEDOR.md
+├── INFRA.md
+├── ARQUITETO.md
+├── DEVOPS.md
+├── COMERCIAL.md
+├── RH.md
+└── AUDITOR.md
 ```
 
 ## Como montar no Claude.ai
 
 ### 1. Crie um Projeto
 
-No [Claude.ai](https://claude.ai), clique em **Projects** no menu lateral e crie um novo projeto. Sugestão de nome: `Comitê de Ideias`.
+No [Claude.ai](https://claude.ai), clique em **Projects** no menu lateral e crie um novo projeto. Sugestão de nome: `Quorum`.
 
 ### 2. Anexe os arquivos
 
