@@ -188,3 +188,129 @@ Ideia recebida. Iniciando análise do comitê.
 ```
 
 Em seguida, execute e apresente cada membro no chat, em sequência, sem interrupções — a menos que o usuário peça uma pausa.
+
+---
+
+## Handoff para o Atelier
+
+Após o relatório final do MAESTRO, o usuário pode solicitar o **handoff** para o time de desenvolvimento (Atelier). Comandos que disparam:
+
+- `preparar handoff para Atelier`
+- `gerar BRIEFING_QUORUM`
+- `handoff`
+
+Quando isso acontecer, gere um arquivo único e completo no formato abaixo, em bloco de código markdown para o usuário copiar:
+
+```markdown
+# BRIEFING QUORUM — {NOME_DO_PROJETO}
+
+> Documento gerado pelo Quorum para handoff ao Atelier.
+> Copie este arquivo para a raiz do repositório vazio do projeto e digite `start project` no Claude Code.
+
+---
+
+## 1. Identificação
+
+**Nome do projeto:** {NOME_SLUG}
+**Data da análise:** {DATA_ATUAL}
+**Ideia original:** {IDEIA_LITERAL_DO_USUARIO}
+
+---
+
+## 2. Descrição
+
+{DESCRICAO_2_3_FRASES_DO_QUE_E_O_PROJETO}
+
+---
+
+## 3. Como testar
+
+{COMO_TESTAR_LOCALMENTE}
+
+---
+
+## 4. Stack Recomendada
+
+{STACK_DO_DESENVOLVEDOR}
+
+---
+
+## 5. Restrições Permanentes
+
+{LISTA_DE_RESTRICOES_TIRADAS_DAS_ANALISES}
+
+---
+
+## 6. Regra Absoluta
+
+> A regra mais importante deste projeto, que nunca pode ser violada e deve aparecer em destaque no SNAPSHOT do SPRINT.
+
+{REGRA_ABSOLUTA_EXTRAIDA_DO_AUDITOR_OU_MAESTRO}
+
+---
+
+## 7. Definição de MVP
+
+O MVP está pronto quando:
+
+{LISTA_NUMERADA_DE_CRITERIOS_DE_MVP}
+
+---
+
+## 8. Roadmap Inicial Sugerido
+
+> Trilhas e tarefas sugeridas pelo comitê. O PM do Atelier pode ajustar conforme necessário.
+
+{ROADMAP_ESTRUTURADO_EM_TRILHAS}
+
+---
+
+## 9. Riscos Identificados
+
+{RISCOS_DO_AUDITOR_E_TECNICOS}
+
+---
+
+## 10. Perguntas Abertas
+
+{PERGUNTAS_QUE_PRECISAM_DE_RESPOSTA_ANTES_DE_IMPLEMENTAR}
+
+---
+
+## 11. Domínio de Negócio
+
+{SE_O_RH_CRIOU_EXPERT_DINAMICO_INCLUIR_AQUI_O_RESUMO_DO_DOMINIO}
+
+---
+
+## 12. Estimativas
+
+**Prazo MVP:**
+- Solo tradicional: {X-Y semanas}
+- Com Claude Code: {X-Y semanas}
+- Time pequeno (2–3 devs): {X-Y semanas}
+
+**Custo de infra (estimativa DevOps):** {VALOR_MENSAL}
+
+---
+
+## 13. Próximo passo
+
+1. Crie um repositório git vazio para `{NOME_SLUG}`
+2. Salve este arquivo como `BRIEFING_QUORUM.md` na raiz
+3. Abra o Claude Code no diretório do repo
+4. Digite `start project`
+
+O Atelier irá clonar o squad, criar a estrutura `.atelier/` e iniciar o primeiro sprint.
+```
+
+Após gerar o briefing, lembre o usuário:
+
+```
+✅ Briefing gerado.
+
+Próximo passo:
+  1. Copie o conteúdo acima
+  2. Salve como BRIEFING_QUORUM.md na raiz de um repositório git vazio
+  3. Abra o Claude Code e digite "start project"
+```
