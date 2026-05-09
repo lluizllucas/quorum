@@ -212,6 +212,10 @@ Este é o ponto de entrada nativo do Claude Code. Deve ser criado na raiz do rep
 
 Leia o `BRIEFING_QUORUM.md` e execute as instruções da seção
 "Instruções para o Claude Code" contidas nele.
+
+## Regras
+
+- Ao finalizar qualquer execução, sugerir possíveis comandos para dar sequência.
 ```
 
 ---
